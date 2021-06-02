@@ -1,0 +1,299 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-06-02 12:15:28
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-06-02 23:00:26
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://at.alicdn.com/t/font_2586280_gyqz3c3737p.css?spm=a313x.7781069.1998910419.70&file=font_2586280_gyqz3c3737p.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <title>CSS3-flex布局-携程网 新版 首页-demo</title>
+    </head>
+    <body>
+        <!-- 顶部搜索框 -->
+        <div class="search-index">
+            <div class="search-index-box">
+                <i class="iconfont icon-sousuo1"></i>
+                <span>搜索:目的地/酒店/景点/航班号</span>
+            </div>
+        </div>
+
+        <div id="js-index-page">
+            <!-- 导航栏 -->
+            <div class="main-nav-wrap">
+                <ul class="nav-list">
+                    <li class="nav-item nav-hotel">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-jiudian"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-hotel">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-minsu"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-hotel">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-baokuan"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item nav-flight">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-jipiao"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-flight">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-jiejibaoche"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-flight">
+                        <a href="#">
+                            <span
+                                class="
+                                    main-nav-icon main-nav-icon-hangbanzhushou
+                                "
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item nav-train">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-huochepiao"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-train">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-qichepiao"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-train">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-zuche"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item nav-vacation">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-lvyou"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-vacation">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-menpiaowanle"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-vacation">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-zhoubianyou"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-list">
+                    <li class="nav-item nav-gs">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-gonglve"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-gs">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-meishi"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-gs">
+                        <a href="#">
+                            <span
+                                class="main-nav-icon main-nav-icon-gouwu"
+                            ></span>
+                            <span>酒店</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 导航开关 -->
+            <div class="nav-switch-wrap"></div>
+            <!-- 子横幅 -->
+            <div class="sub-banner">
+                <div class="banner">
+                    <a href="#" class="block-header">
+                        <img
+                            src="https://images4.c-ctrip.com/target/0zc71120008g0ha4z93C6.png"
+                            alt=""
+                            class="title"
+                        />
+                        <div class="slogan-hotsale">特价好货直播中</div>
+                    </a>
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="rank-wrapper">
+                                    <a href="" class="rank-item">
+                                        <div class="block-image">
+                                            <img
+                                                src="https://images4.c-ctrip.com/target/2A0g1f000001gqyj9F65B_D_280_280_R5.jpg"
+                                                alt=""
+                                            />
+                                            <div class="tags">酒店套餐</div>
+                                        </div>
+                                        <div class="block-footer">
+                                            <div class="rank-title">
+                                                酒店套餐-华东避暑酒店榜-酒店套餐
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="rank-wrapper">
+                                    <a href="" class="rank-item">
+                                        <div class="block-image">
+                                            <img
+                                                src="https://images4.c-ctrip.com/target/2A0g1f000001gqyj9F65B_D_280_280_R5.jpg"
+                                                alt=""
+                                            />
+                                            <div class="tags">酒店套餐</div>
+                                        </div>
+                                        <div class="block-footer">
+                                            <div class="rank-title">
+                                                酒店套餐-华东避暑酒店榜-酒店套餐
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="rank-wrapper">
+                                    <a href="" class="rank-item">
+                                        <div class="block-image">
+                                            <img
+                                                src="https://images4.c-ctrip.com/target/2A0g1f000001gqyj9F65B_D_280_280_R5.jpg"
+                                                alt=""
+                                            />
+                                            <div class="tags">酒店套餐</div>
+                                        </div>
+                                        <div class="block-footer">
+                                            <div class="rank-title">
+                                                酒店套餐-华东避暑酒店榜-酒店套餐
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="banner">
+                    <a href="#" class="block-header">
+                        <img
+                            src="https://images4.c-ctrip.com/target/0zc6g120008g0hcb587E5.png"
+                            alt=""
+                            class="title"
+                        />
+                        <div class="slogan-rank">权威排行榜</div>
+                    </a>
+                    <div class="rank-wrapper">
+                        <a href="" class="rank-item">
+                            <div class="block-image">
+                                <img
+                                    src="https://youimg1.c-ctrip.com/target/0100w120008p00he93B55_R_238_268.png"
+                                    alt=""
+                                />
+                                <div class="tag">华东</div>
+                            </div>
+                            <div class="block-footer">
+                                <div class="rank-title">华东避暑酒店榜</div>
+                            </div>
+                        </a>
+                        <a href="" class="rank-item">
+                            <div class="block-image">
+                                <img
+                                    src="https://youimg1.c-ctrip.com/target/100q1f000001grjwdD18E_R_238_268.jpg"
+                                    alt=""
+                                />
+                                <div class="tag">华东</div>
+                            </div>
+                            <div class="block-footer">
+                                <div class="rank-title">华东避暑酒店榜</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 自定信息 -->
+<div class="Author">
+    <p>CSS3-flex布局-新版携程网首页-demo</p>
+    <p>完2021-06-02 临摹 -ioinn.cn 末日</p>
+</div>
+    </body>
+    <script>
+        window.onload = function () {
+            var swiper = new Swiper('.swiper-container', {
+                autoplay: {
+                    delay: 2000, //2秒切换一次
+                },
+            });
+        };
+    </script>
+</html>

@@ -1,0 +1,54 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-06-02 21:45:03
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-06-02 22:01:32
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.css"
+        />
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                border: 0;
+                list-style: none;
+            }
+            .swiper-container {
+                width: 600px;
+                height: 400px;
+                background: pink;
+                margin: 100px auto;
+            }
+            .swiper-pagination {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+
+        </div>
+        <script>
+            window.onload = function () {
+                var swiper = new Swiper('.swiper-container');
+            };
+        </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    </body>
+</html>
